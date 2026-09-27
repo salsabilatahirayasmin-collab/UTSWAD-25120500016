@@ -1,28 +1,17 @@
-# backend/ — sengaja kosong
+JUDUL : Aplikasi Pencatat Sesi Pelatihan Shuttle Kampus
 
-Kamu yang mengisi folder ini, mulai Sesi 2.
-
-Sesi 2, yang harus ada di sini sebelum kamu keluar:
-
-```
-backend/
-├── requirements.txt    # fastapi, uvicorn
-└── app/
-    ├── __init__.py
-    └── main.py         # FastAPI() + GET /health -> 200 {"status": "ok"}
-```
-
-Titik mulai:
-
-```bash
+Cara Menjalankan Backend:
 cd backend
 python -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
-pip install fastapi uvicorn
-pip freeze > requirements.txt
-uvicorn app.main:app --reload
-```
+# Windows: venv\Scripts\activate
+source venv/bin/activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload 
 
-`venv/` tidak di-commit — sudah diatur di `.gitignore`.
+Cara Menjalankan Frontend:
+cd frontend
+npm install
+npm run dev
 
-Hapus berkas ini kalau sudah tidak perlu.
+Catatan:
+Saya menggunakan AI (Deepseek) untuk membantu mempercepat penulisan boilerplate kode, debugging, dan penyusunan langkah-langkah setup. Logika utama, integrasi API, dan pengujian aplikasi dikerjakan secara mandiri.
